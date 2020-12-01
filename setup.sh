@@ -68,6 +68,7 @@ sudo systemctl enable --now snapd.socket # enable snap communication socket
 pacman -S --no-confirm base-devel
 pacman -S --no-confirm firefox
 pacman -S --no-confirm vim
+pacman -S --no-confirm git
 
 snap install postman
 
@@ -91,4 +92,6 @@ cd ..
 rm -rf vscode-bin/
 cd $SOURCE_DIR
 
-# TODO: install vscode extensions
+# install vscode extensions
+
+./tool-config/vscode.sh
